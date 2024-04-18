@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{91948A0A-E2F0-499D-A6CE-1417B977C15B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HomeApplianceReantalSystem</RootNamespace>
+    <AssemblyName>HomeApplianceReantalSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHome.Designer.cs">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorMordel.cs" />
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminProfile.Designer.cs">
+      <DependentUpon>AdminProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRegister.Designer.cs">
+      <DependentUpon>AdminRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplianceCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplianceCategory.Designer.cs">
+      <DependentUpon>ApplianceCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplianceCategoryModel.cs" />
+    <Compile Include="ApplianceRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplianceRegister.Designer.cs">
+      <DependentUpon>ApplianceRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplianceViewInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplianceViewInfo.Designer.cs">
+      <DependentUpon>ApplianceViewInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerApplianceView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerApplianceView.Designer.cs">
+      <DependentUpon>CustomerApplianceView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerData.Designer.cs">
+      <DependentUpon>CustomerData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerHome.Designer.cs">
+      <DependentUpon>CustomerHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerModel.cs" />
+    <Compile Include="CustomerProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerProfile.Designer.cs">
+      <DependentUpon>CustomerProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirstPageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstPageForm.Designer.cs">
+      <DependentUpon>FirstPageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonModel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RentalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentalForm.Designer.cs">
+      <DependentUpon>RentalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RentalHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentalHistory.Designer.cs">
+      <DependentUpon>RentalHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RentalReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentalReport.Designer.cs">
+      <DependentUpon>RentalReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RentalSystemDataSet.cs">
+      <DependentUpon>RentalSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RentalSystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RentalSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminHome.resx">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminProfile.resx">
+      <DependentUpon>AdminProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRegister.resx">
+      <DependentUpon>AdminRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplianceCategory.resx">
+      <DependentUpon>ApplianceCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplianceRegister.resx">
+      <DependentUpon>ApplianceRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplianceViewInfo.resx">
+      <DependentUpon>ApplianceViewInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerApplianceView.resx">
+      <DependentUpon>CustomerApplianceView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerData.resx">
+      <DependentUpon>CustomerData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerHome.resx">
+      <DependentUpon>CustomerHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerProfile.resx">
+      <DependentUpon>CustomerProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstPageForm.resx">
+      <DependentUpon>FirstPageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RentalForm.resx">
+      <DependentUpon>RentalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentalHistory.resx">
+      <DependentUpon>RentalHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentalReport.resx">
+      <DependentUpon>RentalReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RentalSystemDataSet.xsc">
+      <DependentUpon>RentalSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RentalSystemDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RentalSystemDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RentalSystemDataSet.xss">
+      <DependentUpon>RentalSystemDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
